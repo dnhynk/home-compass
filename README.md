@@ -80,8 +80,6 @@ python -m pytest backend/tests -q
 
 Solo entry to the 2026 Financial AI Challenge, organized by Korea's Financial Security Institute. I built it in August and September 2026 for the preliminary round (deadline 2026-09-07). The first commit imports my earlier prototype of the same app from a private repository. I am the only human contributor to both.
 
-I wrote the specification and acceptance criteria and decided what shipped. Claude Code and Codex wrote most of the code. Commits made through Claude Code carry Co-Authored-By trailers.
-
 ## License
 
 The code and the documents written for this project are under the MIT License (see [LICENSE](LICENSE)). The seven policy texts in `data/policy_sources/` are Korean public-sector documents and keep their own reuse terms, listed with attribution in the sources document above.
