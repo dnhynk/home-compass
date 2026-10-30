@@ -1,6 +1,6 @@
 # Home Compass
 
-[![CI](https://github.com/dnhynk/Home_Compass/actions/workflows/ci.yml/badge.svg)](https://github.com/dnhynk/Home_Compass/actions/workflows/ci.yml)
+[![CI](https://github.com/dnhynk/home-compass/actions/workflows/ci.yml/badge.svg)](https://github.com/dnhynk/home-compass/actions/workflows/ci.yml)
 
 Home Compass helps young renters in Korea choose a lease they can afford: it sets a monthly housing budget, compares the five-year cost of jeonse (a lump-sum deposit lease) and wolse (monthly rent), checks eligibility for public housing-finance programs and scores the risk of losing a deposit.
 
