@@ -3,8 +3,7 @@
 이 문서는 저장소 밖의 권한이 필요한 마지막 작업만 운영자가 수행하도록 만든 체크리스트다.
 코드·문서·배포 구성의 이상은 `scripts/submission_preflight.py`가 먼저 차단한다.
 
-**2026-09-05 운영 선택:** 실제 제출 서비스는 사용자 PC + Tailscale Funnel로 배포했다.
-서버 임대료가 없는 운영 경로는 [PC_HOSTING.md](PC_HOSTING.md)를 따른다.
+**2026-09-05 운영 선택:** 실제 제출 서비스는 사용자 PC에서 운영했다.
 아래 Render 절차는 선택 가능한 유료 대안이다. 해커톤이 Render 또는 유료 서버를 요구하는 것은 아니다.
 
 ## 마감과 가용 시간
@@ -280,11 +279,8 @@ PDF를 열어 첫 표의 팀명·구성원 실명을 마지막으로 확인한�
 
 ## 6. 가용 시간 모니터링
 
-필수 가용 시간 동안 공개 URL과 `/api/health`를 오전·오후 각 1회 직접 확인한다. GitHub의
-`Public deployment check`는 `PUBLIC_URL` 저장소 Secret을 사용해 20분마다 외부 접속을
-확인한다. 장애가 발생하면 PC 전원·인터넷·Windows 로그인, `HomeCompass-Submission-Watchdog`,
-로컬 `127.0.0.1:18174/api/health`, Tailscale Funnel 순서로 확인한다. 서비스가 정상화된 뒤
-`submission_preflight.py --strict --url ...`을 다시 실행한다.
+필수 가용 시간 동안 공개 URL과 `/api/health`를 오전·오후 각 1회 직접 확인한다.
+장애가 복구된 뒤 `submission_preflight.py --strict --url ...`을 다시 실행한다.
 
 ## 7. 본선 진출 시
 
