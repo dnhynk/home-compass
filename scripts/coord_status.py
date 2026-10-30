@@ -160,7 +160,7 @@ WORKER_PATHS: dict[str, list[str]] = {
         "docs/engineering/COORDINATION.md", "docs/engineering/HANDOFF.md",
         "docs/engineering/REHEARSAL.md",
         "README.md", "frontend/generated/", ".gitattributes", ".gitignore",
-        # --- 임시 등재 (제출 배포 파동 · run_b70307c8c66d) — **끝나면 뺀다** ------
+        # --- 임시 등재 (제출 배포 파동) — **끝나면 뺀다** ------
         # 공개 배포 경로는 한 컴포넌트 안에 없다. 쿠키 Secure 경계는 `api`(auth·main),
         # 컨테이너 정의는 무주공산, 축 겹침 수정은 `web` 이다. 배포는 이 셋이 **함께**
         # 맞아야 성립하므로 컴포넌트별로 쪼개면 어느 PR 도 단독으로 검증되지 않는다.
@@ -189,7 +189,7 @@ WORKER_PATHS: dict[str, list[str]] = {
     # ★ **배정이 Coordinator 하나뿐인 것이 정상 상태다.** 워커가 없으면 표도 비어 있어야
     #   한다. 다음 워커를 띄우는 사람이 등재 PR 을 먼저 낸다.
     #
-    # --- 이 Run 의 워커 배정은 전부 회수했다 (run_b70307c8c66d) -----------------
+    # --- 이 Run 의 워커 배정은 전부 회수했다 -----------------
     #
     # `W-web-ui`(#7) · `W-admin-ui`(#8) · `W-deploy-safety`(#10) · `W-eligibility-fix`(#12).
     # 넷 다 머지됐다. **배정이 Coordinator 하나뿐인 것이 정상 상태다** — 다음 워커를
